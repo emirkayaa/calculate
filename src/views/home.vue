@@ -1,14 +1,14 @@
 <template>
-    <div class="app">
-        <div class="container bg-dark text-light" style="height:100vh">
+    <div class="app bg-dark">
+        <div class="container  text-light" style="height:100vh">
             <div class="d-flex justify-content-center align-items-center h-100">
                 <div class="calculate-wrapper px-2 py-3">
                     <div>
                         <span class="fs-1 fw-bold">Calculate</span>
                     </div>
                     <div class="mt-2 p-2 d-flex justify-content-end">
-                        <div class="w-100 m-1 p-3 text-end fw-bold text-white rounded bg-vue-dark fs-3">{{ sum
-                        }}</div>
+                        <input type="text" v-model="this.sum"
+                            class="w-100 m-1 p-3 text-end fw-bold text-white rounded bg-vue-dark fs-3" />
                     </div>
                     <div class="row justify-content-end">
                         <div class="col-3" v-for="e in calculatorElement" :key=e>
